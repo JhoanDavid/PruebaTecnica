@@ -1,0 +1,11 @@
+<h2>Consultar Libro</h2>
+
+<div *ngFor="let book of lstBooks" class="card" style="width: 18rem;">
+    <div class="card-body">
+      <h5 class="card-title">{{book.name}}</h5>
+      <h6 class="card-subtitle mb-2 text-muted">Autor: {{book.author}}</h6>
+      <h6 class="card-subtitle mb-2 text-muted">Fecha publicacion: {{book.publicationDate}}</h6>
+      <h6 class="card-subtitle mb-2 text-muted">Disponible: {{book.available}}</h6>
+      <h6 class="card-subtitle mb-2 text-muted">Valor: {{book.price}}</h6>
+    </div>
+  </div>

@@ -1,0 +1,35 @@
+<div class="center">
+<h2>Crear Libro</h2>
+<form class="row g-3">
+    <div class="row g-3">
+        <div class="col">
+            <label class="form-label">Nombre</label>
+            <input class="form-control" type="text" aria-label="deafult input example" [(ngModel)]="nombre" name="nombre">
+        </div>
+        <div class="col">
+            <label>Autor</label>
+            <input class="form-control" type="text" aria-label="deafult input example" [(ngModel)]="autor" name="autor">
+        </div>
+    </div>
+    <div class="row g-3">
+        <div class="col">
+            <label>Fecha de publicación</label>
+            <input class="form-control" type="text" aria-label="deafult input example" [(ngModel)]="fecha" name="fecha">
+        </div>
+        <div class="col">
+            <label>Valor</label>
+            <input class="form-control" type="number" aria-label="deafult input example" [(ngModel)]="valor" name="valor">
+        </div>
+    </div>
+    <div class="row" id="switch" style="padding: 4%;">
+        <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked [(ngModel)]="disponible" name="disponible">
+            <label class="form-check-label" for="flexSwitchCheckChecked">Disponible</label>
+          </div>
+    </div>
+    <button type="button" class="btn btn-primary" (click)="createBook()">
+        Guardar
+    </button>
+    
+</form>
+</div>
